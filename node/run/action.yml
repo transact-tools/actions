@@ -1,0 +1,9 @@
+inputs:
+  command:
+    description: name of the npm command to run
+runs:
+  using: composite
+  steps:
+    - name: Run "${{ inputs.command }}"
+      shell: bash
+      run: npm run ${{ inputs.command }}

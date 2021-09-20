@@ -1,0 +1,10 @@
+runs:
+  using: composite
+  steps:
+    - name: Lint
+      shell: bash
+      run: npm run lint --if-present
+
+    - name: Run test suite
+      shell: bash
+      run: npm test

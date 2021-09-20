@@ -1,0 +1,6 @@
+runs:
+  using: composite
+  steps:
+    - name: Audit dependencies
+      shell: bash
+      run: npm audit --audit-level=critical
